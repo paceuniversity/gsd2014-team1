@@ -18,7 +18,7 @@ gsd2014-team1
 8. How is this app unique?
 <blockquote>This app will be unique in it's approach by not entirely submersing the user in where other apps may try to do this--in order to get the user to be more fluent--and that's the point, we aren't aiming to make you fluent, our aim is to merely assist you survive, in a realistic manner--not by just saying "food," "thank you," "yes/no," aka the steretypical essentials--and give you the best chance of leaving your experience alive and content</blockquote>
 9. What are the risks associated with the development of this app? Why wouldn't it be delivered completely, on time and on budget? Identify 4 to 6 risks that are relevant in your case.
-<blockquote></blockquote>
+<blockquote>Not knowing which words to use<br>Not knowing which words are irrelevant<br>Choosing words that translate innapropriately across languages<br>Using words that offend certain cultures<br>Something related to those listed above</blockquote>
 10. What similar apps exist on the market? (at least 5 apps)
 <blockquote>Android<br>
 Italian Flashcards<br>
