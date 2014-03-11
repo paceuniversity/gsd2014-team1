@@ -20,9 +20,9 @@ gsd2014-team1
 9. What are the risks associated with the development of this app? Why wouldn't it be delivered completely, on time and on budget? Identify 4 to 6 risks that are relevant in your case.
 <blockquote></blockquote>
 10. What similar apps exist on the market? (at least 5 apps)
-<blockquote>Android
-1. Italian Flashcards
-2. French Flashcards
-3. LAnguage - learning flashcards
-4. IELTS Flashcards
-5. Spanish Flashcards</blockquote>
+<blockquote>Android<br>
+Italian Flashcards<br>
+French Flashcards<br>
+Language - learning flashcards<br>
+IELTS Flashcards<br>
+Spanish Flashcards</blockquote>
