@@ -4,9 +4,9 @@ gsd2014-team1
 1. What is the name of the app you want to develop? (Tentative name)
 SwahEng
 2. What is the app you want to develop? (Description in less than 250 words)
-We want to develop and app that both visitors to Swahili speaking nations, and visitors to English speaking nations will be able to utilize easily while on their travels.
+<blockquote>We want to develop and app that both visitors to Swahili speaking nations, and visitors to English speaking nations will be able to utilize easily while on their travels. We will use most common phrases and incorporate synon</blockquote>
 3. What is your 140-character pitch for this app?
-Visiting a Swahili/English speaking country? Not fluent in one or the other? Try SwahEng today! An easy way to get proficient! Try it today!
+<blockquote>Visiting a Swahili/English speaking country? Not fluent in one or the other? Try SwahEng today! An easy way to get proficient! Try it today!</blockquote>
 4. What is/are the problem/s you want to solve?
 We aim to mitigate the fear in people's stomache's by getting them up to date on the essentials of the language they need in order to realistically get around a country whose native language is one that they aren't familiar with
 5. Who are the users you are targeting?
