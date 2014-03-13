@@ -21,10 +21,10 @@ public class MainActivity extends Activity {
 
 
         final Button myButton = (Button)findViewById(R.id.my_button);
-
         final Button myOtherButton = (Button)findViewById(R.id.my_other_button);
-        myButton.setText("Oh SNAP!");
-        myOtherButton.setText("You momma");
+
+        myButton.setText("Edit Button Text");
+        myOtherButton.setText("Edit Another Button Text");
 
         myButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         myOtherButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myButton.setText("Seether is an ok song.");
+                myButton.setText("Change it up.");
             }
         });
 

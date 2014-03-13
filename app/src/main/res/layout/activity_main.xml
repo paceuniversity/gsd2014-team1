@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:id = "@+id/my_textview"/>
     <Button
-        android:text="HI MOM"
+        android:text="A Button"
         android:layout_below="@id/my_textview"
         android:layout_width="150dp"
         android:layout_height="50dp"
@@ -22,7 +22,7 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="HI DAD"
+        android:text="Another Button"
         android:id="@+id/my_other_button"
         android:layout_below="@id/my_button"/>
 
