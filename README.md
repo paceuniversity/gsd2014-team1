@@ -1,4 +1,4 @@
 gsd2014-team1
 =============
 Team members
-<blockquote>Check [Wiki](https://github.com/paceuniversity/gsd2014-team1/wiki) for more details.</blockquote>
+<blockquote>Check <a href="https://github.com/paceuniversity/gsd2014-team1/wiki">Wiki</a> for more details.</blockquote>
