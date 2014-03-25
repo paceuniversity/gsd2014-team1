@@ -1,5 +1,4 @@
 gsd2014-team1
 =============
 Team members
-<blockquote>Sal | Mike | Mgeni | Zainab | Mwana</blockquote>
-<blockquote>Check Wiki for more details.</blockquote>
+<blockquote>Check ![Wiki](https://github.com/paceuniversity/gsd2014-team1/wiki) for more details.</blockquote>
