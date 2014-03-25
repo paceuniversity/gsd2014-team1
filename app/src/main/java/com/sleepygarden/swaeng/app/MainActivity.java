@@ -1,15 +1,11 @@
 package com.sleepygarden.swaeng.app;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
-import android.content.Context;
-
-import org.apache.http.client.methods.HttpPost;
-
-import java.util.HashMap;
 
 public class MainActivity extends Activity {
 
@@ -19,27 +15,26 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        final Button practiceBtn = (Button)findViewById(R.id.practice_btn);
+        final Button dictBtn = (Button)findViewById(R.id.dict_btn);
 
-        final Button myButton = (Button)findViewById(R.id.my_button);
-        final Button myOtherButton = (Button)findViewById(R.id.my_other_button);
-
-        myButton.setText("Edit Button Text");
-        myOtherButton.setText("Edit Another Button Text");
-
-        myButton.setOnClickListener(new View.OnClickListener() {
+        practiceBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context,"Message",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(context,PracticeActivity.class);
+                startActivity(intent);
+                //finish();
             }
         });
 
-        myOtherButton.setOnClickListener(new View.OnClickListener() {
+        dictBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myButton.setText("Change it up.");
+                Intent intent = new Intent(context,DictionaryActivity.class);
+                startActivity(intent);
+                // if you leave this in, this current layer is taken off the activity stack before the next is added
+                // finish();
             }
         });
-
-        HashMap<String,Object> myDict = new HashMap<String,Object>();
     }
 }
