@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE097D8018EA3FD900CA2113 /* FlashcardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE097D7F18EA3FD900CA2113 /* FlashcardCell.xib */; };
+		BE097D8318EA400C00CA2113 /* FlashcardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE097D8218EA400C00CA2113 /* FlashcardCell.m */; };
+		BE097D8C18EB46F700CA2113 /* Moon Flower Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE097D8A18EB46F700CA2113 /* Moon Flower Bold.ttf */; };
+		BE097D8D18EB46F700CA2113 /* Moon Flower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE097D8B18EB46F700CA2113 /* Moon Flower.ttf */; };
+		BE2745A118EDDE4E007E5F5F /* FiraSansOT-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE2745A018EDDE4E007E5F5F /* FiraSansOT-Light.otf */; };
+		BE714E0918E480350007ECCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE714E0818E480350007ECCC /* Foundation.framework */; };
+		BE714E0B18E480350007ECCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE714E0A18E480350007ECCC /* CoreGraphics.framework */; };
+		BE714E0D18E480350007ECCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE714E0C18E480350007ECCC /* UIKit.framework */; };
+		BE714E1318E480350007ECCC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE714E1118E480350007ECCC /* InfoPlist.strings */; };
+		BE714E1518E480350007ECCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE714E1418E480350007ECCC /* main.m */; };
+		BE714E1918E480350007ECCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE714E1818E480350007ECCC /* AppDelegate.m */; };
+		BE714E1C18E480350007ECCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE714E1A18E480350007ECCC /* Main.storyboard */; };
+		BE714E2118E480350007ECCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE714E2018E480350007ECCC /* Images.xcassets */; };
+		BE714E4118E480E20007ECCC /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = BE714E4018E480E20007ECCC /* Card.m */; };
+		BE714E4418E481980007ECCC /* DictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE714E4318E481980007ECCC /* DictionaryViewController.m */; };
+		BE714E4718E481A50007ECCC /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE714E4618E481A50007ECCC /* MenuViewController.m */; };
+		BE714E4A18E481AE0007ECCC /* FlashcardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE714E4918E481AE0007ECCC /* FlashcardViewController.m */; };
+		BE76152C18F439A300336F48 /* DictionaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76152A18F439A300336F48 /* DictionaryCell.m */; };
+		BE76152D18F439A300336F48 /* DictionaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE76152B18F439A300336F48 /* DictionaryCell.xib */; };
+		BE76153218F44AE800336F48 /* PackUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76153118F44AE800336F48 /* PackUtils.m */; };
+		BE76153518F4812A00336F48 /* PackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76153418F4812A00336F48 /* PackListViewController.m */; };
+		BE76153918F481C400336F48 /* PackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76153818F481C400336F48 /* PackCell.m */; };
+		BE76153B18F481CC00336F48 /* PackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE76153A18F481CC00336F48 /* PackCell.xib */; };
+		BE76153E18F483C000336F48 /* Pack.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76153D18F483C000336F48 /* Pack.m */; };
+		BE76687E191047FA0065055D /* EditCardOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76687D191047FA0065055D /* EditCardOverlay.m */; };
+		BE7668801910480E0065055D /* EditCardOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE76687F1910480E0065055D /* EditCardOverlay.xib */; };
+		BE9127211906C0DC00AEC0DD /* PackCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9127201906C0DC00AEC0DD /* PackCreationViewController.m */; };
+		BEB5886418F59E5600ECBB2A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5885218F59E5600ECBB2A /* AFHTTPRequestOperation.m */; };
+		BEB5886518F59E5600ECBB2A /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5885418F59E5600ECBB2A /* AFHTTPRequestOperationManager.m */; };
+		BEB5886618F59E5600ECBB2A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5885618F59E5600ECBB2A /* AFHTTPSessionManager.m */; };
+		BEB5886718F59E5600ECBB2A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5885918F59E5600ECBB2A /* AFNetworkReachabilityManager.m */; };
+		BEB5886818F59E5600ECBB2A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5885B18F59E5600ECBB2A /* AFSecurityPolicy.m */; };
+		BEB5886918F59E5600ECBB2A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5885D18F59E5600ECBB2A /* AFURLConnectionOperation.m */; };
+		BEB5886A18F59E5600ECBB2A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5885F18F59E5600ECBB2A /* AFURLRequestSerialization.m */; };
+		BEB5886B18F59E5600ECBB2A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5886118F59E5600ECBB2A /* AFURLResponseSerialization.m */; };
+		BEB5886C18F59E5600ECBB2A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5886318F59E5600ECBB2A /* AFURLSessionManager.m */; };
+		BEB5887018F59E7C00ECBB2A /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5886F18F59E7C00ECBB2A /* APIManager.m */; };
+		BECC412E18F496240057577F /* PListValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = BECC412D18F496240057577F /* PListValidation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE097D7F18EA3FD900CA2113 /* FlashcardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlashcardCell.xib; sourceTree = "<group>"; };
+		BE097D8118EA400C00CA2113 /* FlashcardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashcardCell.h; sourceTree = "<group>"; };
+		BE097D8218EA400C00CA2113 /* FlashcardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashcardCell.m; sourceTree = "<group>"; };
+		BE097D8A18EB46F700CA2113 /* Moon Flower Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Flower Bold.ttf"; sourceTree = "<group>"; };
+		BE097D8B18EB46F700CA2113 /* Moon Flower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Moon Flower.ttf"; sourceTree = "<group>"; };
+		BE2745A018EDDE4E007E5F5F /* FiraSansOT-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSansOT-Light.otf"; sourceTree = "<group>"; };
+		BE714E0518E480350007ECCC /* SwaEng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwaEng.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE714E0818E480350007ECCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE714E0A18E480350007ECCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE714E0C18E480350007ECCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BE714E1018E480350007ECCC /* SwaEng-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwaEng-Info.plist"; sourceTree = "<group>"; };
+		BE714E1218E480350007ECCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE714E1418E480350007ECCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE714E1618E480350007ECCC /* SwaEng-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwaEng-Prefix.pch"; sourceTree = "<group>"; };
+		BE714E1718E480350007ECCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE714E1818E480350007ECCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE714E1B18E480350007ECCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE714E2018E480350007ECCC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE714E2718E480350007ECCC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BE714E3F18E480E20007ECCC /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		BE714E4018E480E20007ECCC /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		BE714E4218E481980007ECCC /* DictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryViewController.h; sourceTree = "<group>"; };
+		BE714E4318E481980007ECCC /* DictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryViewController.m; sourceTree = "<group>"; };
+		BE714E4518E481A50007ECCC /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		BE714E4618E481A50007ECCC /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		BE714E4818E481AE0007ECCC /* FlashcardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashcardViewController.h; sourceTree = "<group>"; };
+		BE714E4918E481AE0007ECCC /* FlashcardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashcardViewController.m; sourceTree = "<group>"; };
+		BE76152918F439A300336F48 /* DictionaryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryCell.h; sourceTree = "<group>"; };
+		BE76152A18F439A300336F48 /* DictionaryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryCell.m; sourceTree = "<group>"; };
+		BE76152B18F439A300336F48 /* DictionaryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DictionaryCell.xib; sourceTree = "<group>"; };
+		BE76152F18F44AC200336F48 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		BE76153018F44AE800336F48 /* PackUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackUtils.h; sourceTree = "<group>"; };
+		BE76153118F44AE800336F48 /* PackUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackUtils.m; sourceTree = "<group>"; };
+		BE76153318F4812A00336F48 /* PackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackListViewController.h; sourceTree = "<group>"; };
+		BE76153418F4812A00336F48 /* PackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackListViewController.m; sourceTree = "<group>"; };
+		BE76153718F481C400336F48 /* PackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackCell.h; sourceTree = "<group>"; };
+		BE76153818F481C400336F48 /* PackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackCell.m; sourceTree = "<group>"; };
+		BE76153A18F481CC00336F48 /* PackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PackCell.xib; sourceTree = "<group>"; };
+		BE76153C18F483C000336F48 /* Pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pack.h; sourceTree = "<group>"; };
+		BE76153D18F483C000336F48 /* Pack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pack.m; sourceTree = "<group>"; };
+		BE76687C191047FA0065055D /* EditCardOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCardOverlay.h; sourceTree = "<group>"; };
+		BE76687D191047FA0065055D /* EditCardOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCardOverlay.m; sourceTree = "<group>"; };
+		BE76687F1910480E0065055D /* EditCardOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditCardOverlay.xib; sourceTree = "<group>"; };
+		BE91271F1906C0DC00AEC0DD /* PackCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackCreationViewController.h; sourceTree = "<group>"; };
+		BE9127201906C0DC00AEC0DD /* PackCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackCreationViewController.m; sourceTree = "<group>"; };
+		BEB5885118F59E5600ECBB2A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		BEB5885218F59E5600ECBB2A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		BEB5885318F59E5600ECBB2A /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		BEB5885418F59E5600ECBB2A /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		BEB5885518F59E5600ECBB2A /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		BEB5885618F59E5600ECBB2A /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		BEB5885718F59E5600ECBB2A /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		BEB5885818F59E5600ECBB2A /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		BEB5885918F59E5600ECBB2A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		BEB5885A18F59E5600ECBB2A /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		BEB5885B18F59E5600ECBB2A /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		BEB5885C18F59E5600ECBB2A /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		BEB5885D18F59E5600ECBB2A /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		BEB5885E18F59E5600ECBB2A /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		BEB5885F18F59E5600ECBB2A /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		BEB5886018F59E5600ECBB2A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		BEB5886118F59E5600ECBB2A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		BEB5886218F59E5600ECBB2A /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		BEB5886318F59E5600ECBB2A /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		BEB5886E18F59E7C00ECBB2A /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		BEB5886F18F59E7C00ECBB2A /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		BECC412C18F496240057577F /* PListValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PListValidation.h; sourceTree = "<group>"; };
+		BECC412D18F496240057577F /* PListValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PListValidation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE714E0218E480340007ECCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE714E0B18E480350007ECCC /* CoreGraphics.framework in Frameworks */,
+				BE714E0D18E480350007ECCC /* UIKit.framework in Frameworks */,
+				BE714E0918E480350007ECCC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE097D8418EA401900CA2113 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BE097D8118EA400C00CA2113 /* FlashcardCell.h */,
+				BE097D8218EA400C00CA2113 /* FlashcardCell.m */,
+				BE097D7F18EA3FD900CA2113 /* FlashcardCell.xib */,
+				BE76152918F439A300336F48 /* DictionaryCell.h */,
+				BE76152A18F439A300336F48 /* DictionaryCell.m */,
+				BE76152B18F439A300336F48 /* DictionaryCell.xib */,
+				BE76153718F481C400336F48 /* PackCell.h */,
+				BE76153818F481C400336F48 /* PackCell.m */,
+				BE76153A18F481CC00336F48 /* PackCell.xib */,
+				BE76687C191047FA0065055D /* EditCardOverlay.h */,
+				BE76687D191047FA0065055D /* EditCardOverlay.m */,
+				BE76687F1910480E0065055D /* EditCardOverlay.xib */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		BE714DFC18E480340007ECCC = {
+			isa = PBXGroup;
+			children = (
+				BE714E0E18E480350007ECCC /* SwaEng */,
+				BE714E0718E480350007ECCC /* Frameworks */,
+				BE714E0618E480350007ECCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE714E0618E480350007ECCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE714E0518E480350007ECCC /* SwaEng.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE714E0718E480350007ECCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE714E0818E480350007ECCC /* Foundation.framework */,
+				BE714E0A18E480350007ECCC /* CoreGraphics.framework */,
+				BE714E0C18E480350007ECCC /* UIKit.framework */,
+				BE714E2718E480350007ECCC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE714E0E18E480350007ECCC /* SwaEng */ = {
+			isa = PBXGroup;
+			children = (
+				BEB5886D18F59E5A00ECBB2A /* lib */,
+				BE76152E18F44AB700336F48 /* utils */,
+				BE76152718F3B22800336F48 /* fonts */,
+				BE714E3E18E480D10007ECCC /* models */,
+				BE714E3D18E480C50007ECCC /* view controllers */,
+				BE097D8418EA401900CA2113 /* views */,
+				BE714E1718E480350007ECCC /* AppDelegate.h */,
+				BE714E1818E480350007ECCC /* AppDelegate.m */,
+				BE714E1A18E480350007ECCC /* Main.storyboard */,
+				BE714E2018E480350007ECCC /* Images.xcassets */,
+				BE714E0F18E480350007ECCC /* Supporting Files */,
+			);
+			path = SwaEng;
+			sourceTree = "<group>";
+		};
+		BE714E0F18E480350007ECCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE714E1018E480350007ECCC /* SwaEng-Info.plist */,
+				BE714E1118E480350007ECCC /* InfoPlist.strings */,
+				BE714E1418E480350007ECCC /* main.m */,
+				BE714E1618E480350007ECCC /* SwaEng-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE714E3D18E480C50007ECCC /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE714E4518E481A50007ECCC /* MenuViewController.h */,
+				BE714E4618E481A50007ECCC /* MenuViewController.m */,
+				BE76153318F4812A00336F48 /* PackListViewController.h */,
+				BE76153418F4812A00336F48 /* PackListViewController.m */,
+				BE714E4218E481980007ECCC /* DictionaryViewController.h */,
+				BE714E4318E481980007ECCC /* DictionaryViewController.m */,
+				BE714E4818E481AE0007ECCC /* FlashcardViewController.h */,
+				BE714E4918E481AE0007ECCC /* FlashcardViewController.m */,
+				BE91271F1906C0DC00AEC0DD /* PackCreationViewController.h */,
+				BE9127201906C0DC00AEC0DD /* PackCreationViewController.m */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
+		BE714E3E18E480D10007ECCC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BE714E3F18E480E20007ECCC /* Card.h */,
+				BE714E4018E480E20007ECCC /* Card.m */,
+				BE76153C18F483C000336F48 /* Pack.h */,
+				BE76153D18F483C000336F48 /* Pack.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		BE76152718F3B22800336F48 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BE2745A018EDDE4E007E5F5F /* FiraSansOT-Light.otf */,
+				BE097D8A18EB46F700CA2113 /* Moon Flower Bold.ttf */,
+				BE097D8B18EB46F700CA2113 /* Moon Flower.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		BE76152E18F44AB700336F48 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				BE76152F18F44AC200336F48 /* Macros.h */,
+				BE76153018F44AE800336F48 /* PackUtils.h */,
+				BE76153118F44AE800336F48 /* PackUtils.m */,
+				BECC412C18F496240057577F /* PListValidation.h */,
+				BECC412D18F496240057577F /* PListValidation.m */,
+				BEB5886E18F59E7C00ECBB2A /* APIManager.h */,
+				BEB5886F18F59E7C00ECBB2A /* APIManager.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		BEB5885018F59E5600ECBB2A /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				BEB5885118F59E5600ECBB2A /* AFHTTPRequestOperation.h */,
+				BEB5885218F59E5600ECBB2A /* AFHTTPRequestOperation.m */,
+				BEB5885318F59E5600ECBB2A /* AFHTTPRequestOperationManager.h */,
+				BEB5885418F59E5600ECBB2A /* AFHTTPRequestOperationManager.m */,
+				BEB5885518F59E5600ECBB2A /* AFHTTPSessionManager.h */,
+				BEB5885618F59E5600ECBB2A /* AFHTTPSessionManager.m */,
+				BEB5885718F59E5600ECBB2A /* AFNetworking.h */,
+				BEB5885818F59E5600ECBB2A /* AFNetworkReachabilityManager.h */,
+				BEB5885918F59E5600ECBB2A /* AFNetworkReachabilityManager.m */,
+				BEB5885A18F59E5600ECBB2A /* AFSecurityPolicy.h */,
+				BEB5885B18F59E5600ECBB2A /* AFSecurityPolicy.m */,
+				BEB5885C18F59E5600ECBB2A /* AFURLConnectionOperation.h */,
+				BEB5885D18F59E5600ECBB2A /* AFURLConnectionOperation.m */,
+				BEB5885E18F59E5600ECBB2A /* AFURLRequestSerialization.h */,
+				BEB5885F18F59E5600ECBB2A /* AFURLRequestSerialization.m */,
+				BEB5886018F59E5600ECBB2A /* AFURLResponseSerialization.h */,
+				BEB5886118F59E5600ECBB2A /* AFURLResponseSerialization.m */,
+				BEB5886218F59E5600ECBB2A /* AFURLSessionManager.h */,
+				BEB5886318F59E5600ECBB2A /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		BEB5886D18F59E5A00ECBB2A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				BEB5885018F59E5600ECBB2A /* AFNetworking */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE714E0418E480340007ECCC /* SwaEng */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE714E3718E480350007ECCC /* Build configuration list for PBXNativeTarget "SwaEng" */;
+			buildPhases = (
+				BE714E0118E480340007ECCC /* Sources */,
+				BE714E0218E480340007ECCC /* Frameworks */,
+				BE714E0318E480340007ECCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwaEng;
+			productName = SwaEng;
+			productReference = BE714E0518E480350007ECCC /* SwaEng.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE714DFD18E480340007ECCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Michael Cornell";
+			};
+			buildConfigurationList = BE714E0018E480340007ECCC /* Build configuration list for PBXProject "SwaEng" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE714DFC18E480340007ECCC;
+			productRefGroup = BE714E0618E480350007ECCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE714E0418E480340007ECCC /* SwaEng */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE714E0318E480340007ECCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE7668801910480E0065055D /* EditCardOverlay.xib in Resources */,
+				BE097D8D18EB46F700CA2113 /* Moon Flower.ttf in Resources */,
+				BE76152D18F439A300336F48 /* DictionaryCell.xib in Resources */,
+				BE714E2118E480350007ECCC /* Images.xcassets in Resources */,
+				BE2745A118EDDE4E007E5F5F /* FiraSansOT-Light.otf in Resources */,
+				BE76153B18F481CC00336F48 /* PackCell.xib in Resources */,
+				BE097D8C18EB46F700CA2113 /* Moon Flower Bold.ttf in Resources */,
+				BE714E1318E480350007ECCC /* InfoPlist.strings in Resources */,
+				BE097D8018EA3FD900CA2113 /* FlashcardCell.xib in Resources */,
+				BE714E1C18E480350007ECCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE714E0118E480340007ECCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE714E4418E481980007ECCC /* DictionaryViewController.m in Sources */,
+				BE714E4A18E481AE0007ECCC /* FlashcardViewController.m in Sources */,
+				BEB5887018F59E7C00ECBB2A /* APIManager.m in Sources */,
+				BEB5886518F59E5600ECBB2A /* AFHTTPRequestOperationManager.m in Sources */,
+				BE097D8318EA400C00CA2113 /* FlashcardCell.m in Sources */,
+				BEB5886918F59E5600ECBB2A /* AFURLConnectionOperation.m in Sources */,
+				BE76153518F4812A00336F48 /* PackListViewController.m in Sources */,
+				BECC412E18F496240057577F /* PListValidation.m in Sources */,
+				BEB5886A18F59E5600ECBB2A /* AFURLRequestSerialization.m in Sources */,
+				BE76153218F44AE800336F48 /* PackUtils.m in Sources */,
+				BEB5886618F59E5600ECBB2A /* AFHTTPSessionManager.m in Sources */,
+				BEB5886418F59E5600ECBB2A /* AFHTTPRequestOperation.m in Sources */,
+				BE714E4718E481A50007ECCC /* MenuViewController.m in Sources */,
+				BEB5886818F59E5600ECBB2A /* AFSecurityPolicy.m in Sources */,
+				BE76153918F481C400336F48 /* PackCell.m in Sources */,
+				BEB5886718F59E5600ECBB2A /* AFNetworkReachabilityManager.m in Sources */,
+				BEB5886C18F59E5600ECBB2A /* AFURLSessionManager.m in Sources */,
+				BE714E4118E480E20007ECCC /* Card.m in Sources */,
+				BE9127211906C0DC00AEC0DD /* PackCreationViewController.m in Sources */,
+				BE76153E18F483C000336F48 /* Pack.m in Sources */,
+				BE714E1918E480350007ECCC /* AppDelegate.m in Sources */,
+				BE714E1518E480350007ECCC /* main.m in Sources */,
+				BEB5886B18F59E5600ECBB2A /* AFURLResponseSerialization.m in Sources */,
+				BE76152C18F439A300336F48 /* DictionaryCell.m in Sources */,
+				BE76687E191047FA0065055D /* EditCardOverlay.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE714E1118E480350007ECCC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE714E1218E480350007ECCC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BE714E1A18E480350007ECCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE714E1B18E480350007ECCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE714E3518E480350007ECCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE714E3618E480350007ECCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE714E3818E480350007ECCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwaEng/SwaEng-Prefix.pch";
+				INFOPLIST_FILE = "SwaEng/SwaEng-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE714E3918E480350007ECCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwaEng/SwaEng-Prefix.pch";
+				INFOPLIST_FILE = "SwaEng/SwaEng-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE714E0018E480340007ECCC /* Build configuration list for PBXProject "SwaEng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE714E3518E480350007ECCC /* Debug */,
+				BE714E3618E480350007ECCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE714E3718E480350007ECCC /* Build configuration list for PBXNativeTarget "SwaEng" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE714E3818E480350007ECCC /* Debug */,
+				BE714E3918E480350007ECCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE714DFD18E480340007ECCC /* Project object */;
+}
