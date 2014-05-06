@@ -1,3 +1,10 @@
+.Trashes
+*~.nib
+SwaEng-iOS/DerivedData/
+SwaEng-iOS/build/
+
+
+
 .gradle
 /local.properties
 /.idea/workspace.xml
@@ -14,11 +21,11 @@
 *.class
 
 # generated files
-bin/
-gen/
+SwaEng-Android/bin/
+SwaEng-Android/gen/
 
 # Local configuration file (sdk path, etc)
-local.properties
+SwaEng-Android/local.properties
 
 # Eclipse project files
 .classpath
