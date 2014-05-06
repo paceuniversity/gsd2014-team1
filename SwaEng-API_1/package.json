@@ -1,0 +1,27 @@
+{
+  "name": "SwaEngAPI",
+  "version": "0.0.1",
+  "description": "SwaEng has an API!",
+  "main": "api.js",
+  "dependencies" : {
+      "restify" : "*",
+      "mongoose" : "*",
+      "nodemon" : "*" 
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sleepygarden/SwaEngAPI.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "sleepygarden",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sleepygarden/SwaEngAPI/issues"
+  },
+  "homepage": "https://github.com/sleepygarden/SwaEngAPI"
+}
