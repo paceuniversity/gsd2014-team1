@@ -11,28 +11,45 @@
 @implementation DictionaryCell
 
 -(void)awakeFromNib {
-    self.primaryText.font = FiraLight(17);
-    self.secondaryText.font = FiraLight(14);
+    self.phraseField.font = FiraLight(17);
+    self.translationField.font = FiraLight(17);
 
-    self.primaryText.textColor = jetGray;
-    self.secondaryText.textColor = jetGray;
+    self.phraseField.textColor = jetGray;
+    self.translationField.textColor = jetGray;
+
+    NSLog(@"dict cell awake");
+    self.phraseField.delegate = self;
+    self.translationField.delegate = self;
+
+    NSLog(@"phrase field delegate %@",self.phraseField.delegate);
+
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 -(void)setupWithDictEntry:(Card*)card {
-    self.primaryText.text = card.engWord;
-    self.secondaryText.text = card.swaWord;
-}
-
--(void)setIsEnabled:(BOOL)isEnabled {
-    if (_isEnabled != isEnabled){
-        _isEnabled = isEnabled;
-        self.primaryText.userInteractionEnabled = self.isEnabled;
-        self.secondaryText.userInteractionEnabled = self.isEnabled;
-    }
+    self.phraseField.text = card.phrase;
+    self.translationField.text = card.translation;
 }
 
 +(CGFloat)height {
-    return 60;
+    return 75;
+}
+
+#pragma mark - UITextField
+-(void)textFieldDidEndEditing:(UITextField *)textField {
+    if (self.delegate){
+        if (textField == self.phraseField){
+            [self.delegate phraseWasEditted:self];
+        }
+        else {
+            [self.delegate translationWasEditted:self];
+        }
+    }
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end

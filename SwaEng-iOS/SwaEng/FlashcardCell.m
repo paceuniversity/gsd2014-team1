@@ -37,8 +37,8 @@
 }
 
 -(void)setupWithDictEntry:(Card*)card isAlreadyFlipped:(BOOL)isAlreadyFlipped {
-    self.frontText = card.swaWord;
-    self.backText = card.engWord;
+    self.frontText = card.phrase;
+    self.backText = card.translation;
 
     self.isFrontShowing = !isAlreadyFlipped;
     [self flipUnanimated];

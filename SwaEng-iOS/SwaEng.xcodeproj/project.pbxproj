@@ -31,8 +31,6 @@
 		BE76153918F481C400336F48 /* PackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76153818F481C400336F48 /* PackCell.m */; };
 		BE76153B18F481CC00336F48 /* PackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE76153A18F481CC00336F48 /* PackCell.xib */; };
 		BE76153E18F483C000336F48 /* Pack.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76153D18F483C000336F48 /* Pack.m */; };
-		BE76687E191047FA0065055D /* EditCardOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = BE76687D191047FA0065055D /* EditCardOverlay.m */; };
-		BE7668801910480E0065055D /* EditCardOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE76687F1910480E0065055D /* EditCardOverlay.xib */; };
 		BE9127211906C0DC00AEC0DD /* PackCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9127201906C0DC00AEC0DD /* PackCreationViewController.m */; };
 		BEB5886418F59E5600ECBB2A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5885218F59E5600ECBB2A /* AFHTTPRequestOperation.m */; };
 		BEB5886518F59E5600ECBB2A /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB5885418F59E5600ECBB2A /* AFHTTPRequestOperationManager.m */; };
@@ -88,9 +86,6 @@
 		BE76153A18F481CC00336F48 /* PackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PackCell.xib; sourceTree = "<group>"; };
 		BE76153C18F483C000336F48 /* Pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pack.h; sourceTree = "<group>"; };
 		BE76153D18F483C000336F48 /* Pack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pack.m; sourceTree = "<group>"; };
-		BE76687C191047FA0065055D /* EditCardOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCardOverlay.h; sourceTree = "<group>"; };
-		BE76687D191047FA0065055D /* EditCardOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCardOverlay.m; sourceTree = "<group>"; };
-		BE76687F1910480E0065055D /* EditCardOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditCardOverlay.xib; sourceTree = "<group>"; };
 		BE91271F1906C0DC00AEC0DD /* PackCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackCreationViewController.h; sourceTree = "<group>"; };
 		BE9127201906C0DC00AEC0DD /* PackCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackCreationViewController.m; sourceTree = "<group>"; };
 		BEB5885118F59E5600ECBB2A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -144,9 +139,6 @@
 				BE76153718F481C400336F48 /* PackCell.h */,
 				BE76153818F481C400336F48 /* PackCell.m */,
 				BE76153A18F481CC00336F48 /* PackCell.xib */,
-				BE76687C191047FA0065055D /* EditCardOverlay.h */,
-				BE76687D191047FA0065055D /* EditCardOverlay.m */,
-				BE76687F1910480E0065055D /* EditCardOverlay.xib */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -346,7 +338,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE7668801910480E0065055D /* EditCardOverlay.xib in Resources */,
 				BE097D8D18EB46F700CA2113 /* Moon Flower.ttf in Resources */,
 				BE76152D18F439A300336F48 /* DictionaryCell.xib in Resources */,
 				BE714E2118E480350007ECCC /* Images.xcassets in Resources */,
@@ -390,7 +381,6 @@
 				BE714E1518E480350007ECCC /* main.m in Sources */,
 				BEB5886B18F59E5600ECBB2A /* AFURLResponseSerialization.m in Sources */,
 				BE76152C18F439A300336F48 /* DictionaryCell.m in Sources */,
-				BE76687E191047FA0065055D /* EditCardOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -480,7 +470,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

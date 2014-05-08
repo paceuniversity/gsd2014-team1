@@ -30,11 +30,21 @@
     [self.searchDisplayController.searchResultsTableView registerNib:miniFlashcardCellNib forCellReuseIdentifier:@"PackCell"];
 
     self.invertedPacksList = [NSMutableDictionary new];
-    for (NSString *key in self.flashcardPacks.keyEnumerator) {
-        self.invertedPacksList[self.flashcardPacks[key]] = key;
+
+}
+-(void)viewWillAppear:(BOOL)animated {
+    NSLog(@"view did appear");
+    [self refreshPacks];
+}
+-(void)refreshPacks {
+
+    [self.invertedPacksList removeAllObjects];
+    NSDictionary *flashcardPacks = [PackUtils packsListing];
+    for (NSString *key in flashcardPacks.keyEnumerator) {
+        self.invertedPacksList[flashcardPacks[key]] = key;
     }
     self.flashcardPackNames = [self.invertedPacksList.allKeys mutableCopy];
-
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {

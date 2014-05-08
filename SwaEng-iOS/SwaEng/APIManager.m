@@ -7,20 +7,21 @@
 //
 
 #import "APIManager.h"
+#import "Card.h"
 
 @implementation APIManager
 +(instancetype)sharedManager {
     static APIManager *manager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        manager = [[APIManager alloc] initWithBaseURL:[NSURL URLWithString:@"www.example.com"]];
+        manager = [[APIManager alloc] initWithBaseURL:[NSURL URLWithString:@"www.juliegoat.com"]];
     });
 
     return manager;
 }
 
--(AFHTTPRequestOperation*)downloadPack:(NSString*)packName withBlock:(void(^)(Pack *pack, NSError *error))callback{
-    return [self GET:FORMAT(@"endpoint/%@",packName)
+-(AFHTTPRequestOperation*)downloadPacksWithBlock:(void(^)(Pack *pack, NSError *error))callback{
+    return [self GET:@"flashpacks"
           parameters:nil
              success:^(AFHTTPRequestOperation *operation, id responseObject) {
                  NSDictionary *json = responseObject;
@@ -29,6 +30,24 @@
              }
              failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                  callback(nil,error);
+             }];
+}
+
+-(AFHTTPRequestOperation*)postPack:(Pack *)pack withBlock:(void (^)(NSError *))callback {
+    NSMutableArray *formattedCards = [NSMutableArray new];
+    for (Card *card in pack.cards){
+        [formattedCards addObject:[card dictRepresentation]];
+    }
+    NSDictionary *postDict = @{@"name":pack.name,
+                               @"cards":formattedCards};
+    return [self POST:@"flashpacks"
+          parameters:postDict
+             success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                 NSDictionary *json = responseObject;
+                 callback(nil);
+             }
+             failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                 callback(error);
              }];
 }
 

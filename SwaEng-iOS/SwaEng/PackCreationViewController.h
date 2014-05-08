@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DictionaryCell.h"
 
-@interface PackCreationViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
+@interface PackCreationViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, DictionaryCellDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *packTitleTextfield;
 @property (weak, nonatomic) IBOutlet UITableView *cardsTable;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 
 @end
