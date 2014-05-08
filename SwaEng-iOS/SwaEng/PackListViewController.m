@@ -11,7 +11,7 @@
 #import "PackUtils.h"
 #import "FlashcardViewController.h"
 #import "DictionaryViewController.h"
-
+#import "APIManager.h"
 @interface PackListViewController ()
 
 @property (strong, nonatomic) NSArray *searchResults;
@@ -38,13 +38,33 @@
 }
 -(void)refreshPacks {
 
-    [self.invertedPacksList removeAllObjects];
-    NSDictionary *flashcardPacks = [PackUtils packsListing];
-    for (NSString *key in flashcardPacks.keyEnumerator) {
-        self.invertedPacksList[flashcardPacks[key]] = key;
-    }
-    self.flashcardPackNames = [self.invertedPacksList.allKeys mutableCopy];
-    [self.tableView reloadData];
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    spinner.center = self.view.center;
+    spinner.hidesWhenStopped = YES;
+    [self.view addSubview:spinner];
+    [spinner startAnimating];
+    [[APIManager sharedManager] downloadPacksWithBlock:^(NSArray *packs, NSError *error) {
+        if (error){
+            NSLog(@"error updating packs %@",error.localizedDescription);
+        }
+        else {
+            NSLog(@"updating packs with latest versions...");
+            for (Pack *pack in packs){
+                [PackUtils savePackLocally:pack];
+            }
+        }
+
+        [self.invertedPacksList removeAllObjects];
+        NSDictionary *flashcardPacks = [PackUtils packsListing];
+        for (NSString *key in flashcardPacks.keyEnumerator) {
+            self.invertedPacksList[flashcardPacks[key]] = key;
+        }
+        self.flashcardPackNames = [self.invertedPacksList.allKeys mutableCopy];
+        [self.tableView reloadData];
+
+        [spinner stopAnimating];
+        [spinner removeFromSuperview];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

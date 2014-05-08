@@ -7,14 +7,12 @@ var mongoose = require('mongoose')
 var pjson = require('../package.json');
 
 var card_model = {
-    eng_word:String,
-    swa_word:String,
-    eng_pronounce:String,
-    swa_pronounce:String
+    phrase:String,
+    translation:String
 }
 
 var flashpackSchema = new Schema({
-    post: String,
+    name: String,
     cards: [card_model]
 },
     {

@@ -17,11 +17,8 @@
     self.phraseField.textColor = jetGray;
     self.translationField.textColor = jetGray;
 
-    NSLog(@"dict cell awake");
     self.phraseField.delegate = self;
     self.translationField.delegate = self;
-
-    NSLog(@"phrase field delegate %@",self.phraseField.delegate);
 
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }

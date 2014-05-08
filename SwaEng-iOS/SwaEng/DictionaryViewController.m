@@ -48,7 +48,7 @@
 }
 
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
-    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"engWord beginswith[c] %@", searchText];
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"phrase beginswith[c] %@", searchText];
     self.searchResults = [self.pack.cards filteredArrayUsingPredicate:resultPredicate];
 }
 

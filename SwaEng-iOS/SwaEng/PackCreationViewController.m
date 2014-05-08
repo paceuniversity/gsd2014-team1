@@ -10,7 +10,7 @@
 #import "Pack.h"
 #import "Card.h"
 #import "DictionaryCell.h"
-#import "PackUtils.h"
+#import "APIManager.h"
 
 @interface PackCreationViewController ()
 @property (strong, nonatomic) Pack *pack;
@@ -50,8 +50,14 @@
 }
 - (IBAction)saveAndExit:(id)sender {
     self.pack.name = self.packTitleTextfield.text;
-    [PackUtils savePackLocally:self.pack];
-    [self.navigationController popViewControllerAnimated:YES];
+    [[APIManager sharedManager] postPack:self.pack withBlock:^(NSError *error) {
+        if (error){
+            NSLog(@"can't post pack %@",error.localizedDescription);
+        }
+        else {
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    }];
 }
 
 #pragma mark - UITableView
@@ -59,8 +65,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"select");
     if (indexPath.row == self.pack.cards.count){
-        NSLog(@"add new card");
-        Card *card = [[Card alloc] initWithDummyCode:@"YOLO"];
+        Card *card = [[Card alloc] init];
         [self.pack.cards addObject:card];
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.pack.cards.count-1 inSection:0];
         [self.cardsTable beginUpdates];

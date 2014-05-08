@@ -314,6 +314,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Michael Cornell";
+				TargetAttributes = {
+					BE714E0418E480340007ECCC = {
+						DevelopmentTeam = 79Z5TDFM5V;
+					};
+				};
 			};
 			buildConfigurationList = BE714E0018E480340007ECCC /* Build configuration list for PBXProject "SwaEng" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -481,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwaEng/SwaEng-Prefix.pch";
 				INFOPLIST_FILE = "SwaEng/SwaEng-Info.plist";
@@ -494,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SwaEng/SwaEng-Prefix.pch";
 				INFOPLIST_FILE = "SwaEng/SwaEng-Info.plist";

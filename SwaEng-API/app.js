@@ -9,6 +9,7 @@ var app = restify.createServer({
   version: pjson.version
 });
 
+
 // connect to Mongo when the app initializes
 mongoose.connect('mongodb://localhost/swa_eng_api');
 

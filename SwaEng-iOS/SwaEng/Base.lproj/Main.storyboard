@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="-728" y="603"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Menu View Controller - SwaEng-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="MenuViewController" sceneMemberID="viewController">
@@ -54,7 +54,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gMM-XB-WPS"/>
+                    <navigationItem key="navigationItem" title="SwaEng" id="gMM-XB-WPS"/>
                     <connections>
                         <outlet property="dictionaryButton" destination="olJ-cn-9A0" id="4VW-AA-Mnq"/>
                         <outlet property="flashcardButton" destination="FOg-Sb-5Nm" id="uc9-TB-buF"/>
@@ -65,7 +65,7 @@
             </objects>
             <point key="canvasLocation" x="-269" y="603"/>
         </scene>
-        <!--Pack List View Controller - Pack List-->
+        <!--Pack List View Controller - My Packs-->
         <scene sceneID="igU-mq-TdV">
             <objects>
                 <tableViewController id="wYn-18-76E" customClass="PackListViewController" sceneMemberID="viewController">
@@ -86,7 +86,7 @@
                             <outlet property="delegate" destination="wYn-18-76E" id="cgc-ik-3Yv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Pack List" id="bBV-QW-ixb">
+                    <navigationItem key="navigationItem" title="My Packs" id="bBV-QW-ixb">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="SvU-eu-Sia">
                             <connections>
                                 <action selector="addNewPack:" destination="wYn-18-76E" id="koW-ko-Rp0"/>

@@ -10,7 +10,7 @@
 
 @interface Pack : NSObject
 @property (strong, nonatomic) NSString *name;
-@property (nonatomic) NSUInteger packID;
+@property (strong, nonatomic) NSString *packIDString;
 @property (strong, nonatomic, readonly) NSString *fileName;
 @property (strong, nonatomic) NSMutableArray *cards;
 
