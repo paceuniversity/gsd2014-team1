@@ -15,7 +15,9 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         BOOL prod = NO;
-        NSString *localhost = @"http://192.168.1.125:5000";
+        //NSString *localhost = @"http://192.168.1.125:5000";
+        NSString *localhost = @"http://10.0.102.141:5000";
+
         manager = [[APIManager alloc] initWithBaseURL:[NSURL URLWithString: prod ? @"http://www.juliegoat.com" : localhost]];
     });
 
