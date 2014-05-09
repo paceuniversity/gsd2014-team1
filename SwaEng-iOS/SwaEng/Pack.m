@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         self.cards = [NSMutableArray new];
-        self.packID = -1;
+        self.packIDString = @"0";
         self.name = @"New Pack";
     }
     return self;
@@ -23,7 +23,7 @@
     self = [super init];
     if (self) {
         self.name = properties[@"name"];
-        self.packID = [properties[@"id"] intValue];
+        self.packIDString = properties[@"_id"];
         self.cards = [NSMutableArray new];
         for (NSDictionary *rawCard in properties[@"cards"]){
             Card *card = [[Card alloc] initWithProperties:rawCard];
@@ -33,7 +33,7 @@
     return self;
 }
 -(NSString*)fileName {
-    return FORMAT(@"%@_%lu.flashpack",self.name,(unsigned long)self.packID);
+    return FORMAT(@"%@_%@.flashpack",self.name,self.packIDString);
 }
 -(NSDictionary*)dictRepresentation {
     NSMutableArray *formattedCards = [NSMutableArray new];
@@ -41,7 +41,7 @@
         [formattedCards addObject:[card dictRepresentation]];
     }
     return @{@"name":self.name,
-             @"id":@(self.packID),
+             @"_id":self.packIDString,
              @"cards":formattedCards};
 }
 -(NSString*)description {

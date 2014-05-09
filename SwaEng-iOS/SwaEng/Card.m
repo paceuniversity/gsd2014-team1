@@ -13,8 +13,8 @@
 -(id)initWithProperties:(NSDictionary*)properties {
     self = [super init];
     if (self){
-        self.engWord = properties[@"eng_word"];
-        self.swaWord = properties[@"swa_word"];
+        self.phrase = properties[@"phrase"];
+        self.translation = properties[@"translation"];
     }
     return self;
 }
@@ -22,8 +22,8 @@
 -(id)initWithDummyCode:(NSString *)dummy {
     self = [super init];
     if (self){
-        self.engWord = [dummy stringByAppendingString:@" (eng)"];
-        self.swaWord = [dummy stringByAppendingString:@" (swa)"];
+        self.phrase = [dummy stringByAppendingString:@" (eng)"];
+        self.translation = [dummy stringByAppendingString:@" (swa)"];
     }
     return self;
 }
@@ -33,8 +33,8 @@
 }
 
 -(NSDictionary*)dictRepresentation {
-    return @{@"eng_word":self.engWord,
-             @"swa_word":self.swaWord};
+    return @{@"phrase":self.phrase,
+             @"translation":self.translation};
 }
 
 @end

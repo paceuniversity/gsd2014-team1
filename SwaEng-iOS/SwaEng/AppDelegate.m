@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "APIManager.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

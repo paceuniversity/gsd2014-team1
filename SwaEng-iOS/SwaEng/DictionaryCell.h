@@ -9,10 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "Card.h"
 
-@interface DictionaryCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UITextField *primaryText;
-@property (weak, nonatomic) IBOutlet UITextField *secondaryText;
-@property (nonatomic) BOOL isEnabled;
+@class DictionaryCell;
+@protocol DictionaryCellDelegate <NSObject>
+
+-(void)phraseWasEditted:(DictionaryCell*)cell;
+-(void)translationWasEditted:(DictionaryCell*)cell;
+
+@end
+
+@interface DictionaryCell : UITableViewCell <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *phraseField;
+@property (weak, nonatomic) IBOutlet UITextField *translationField;
+@property (weak, nonatomic) id<DictionaryCellDelegate> delegate;
 -(void)setupWithDictEntry:(Card*)card;
 +(CGFloat)height;
 

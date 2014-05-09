@@ -15,7 +15,6 @@ typedef NS_ENUM(NSUInteger, PackListDestinationVC) {
 
 @interface PackListViewController : UITableViewController <UISearchDisplayDelegate>
 
-@property (strong, nonatomic) NSDictionary *flashcardPacks;
 @property (nonatomic) PackListDestinationVC destVC;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *addPackBarButton;
 @end

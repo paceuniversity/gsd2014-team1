@@ -42,11 +42,8 @@
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-
     if ([[segue identifier] isEqualToString:@"menu->packListSegue"]){
         [(PackListViewController*)segue.destinationViewController setDestVC:[sender intValue]];
-        [(PackListViewController*)segue.destinationViewController setFlashcardPacks:[PackUtils packsListing]];
-
     }
 }
 

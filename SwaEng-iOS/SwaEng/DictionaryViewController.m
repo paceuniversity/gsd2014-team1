@@ -48,7 +48,7 @@
 }
 
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope {
-    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"engWord beginswith[c] %@", searchText];
+    NSPredicate *resultPredicate = [NSPredicate predicateWithFormat:@"phrase beginswith[c] %@", searchText];
     self.searchResults = [self.pack.cards filteredArrayUsingPredicate:resultPredicate];
 }
 
@@ -57,6 +57,8 @@
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"DictionaryCell";
     DictionaryCell *cell = (DictionaryCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    cell.phraseField.userInteractionEnabled = NO;
+    cell.translationField.userInteractionEnabled = NO;
 
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         [cell setupWithDictEntry:self.searchResults[indexPath.row]];
@@ -79,6 +81,5 @@
         return [self.pack.cards count];
     }
 }
-
 
 @end

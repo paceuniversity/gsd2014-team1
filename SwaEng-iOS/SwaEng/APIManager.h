@@ -11,6 +11,7 @@
 
 @interface APIManager : AFHTTPRequestOperationManager
 +(instancetype)sharedManager;
--(AFHTTPRequestOperation*)downloadPack:(NSString*)packName withBlock:(void(^)(Pack *pack, NSError *error))callback;
+-(AFHTTPRequestOperation*)downloadPacksWithBlock:(void(^)(NSArray *packs, NSError *error))callback;
+-(AFHTTPRequestOperation*)postPack:(Pack*)pack withBlock:(void(^)(NSError *error))callback;
 
 @end

@@ -16,7 +16,7 @@
     NSMutableArray *defaultPacks = [NSMutableArray new];
     Pack *dummyPack = [[Pack alloc] init];
     dummyPack.name = @"Dummy Pack";
-    dummyPack.packID = 1;
+    dummyPack.packIDString = @"1";
     Card *cardAlpha = [[Card alloc] initWithDummyCode:@"Alpha"];
     Card *cardBeta = [[Card alloc] initWithDummyCode:@"Beta"];
     Card *cardGamma = [[Card alloc] initWithDummyCode:@"Gamma"];
@@ -85,7 +85,7 @@
 }
 
 +(BOOL)validatePack:(Pack*)pack {
-    return (pack.packID && pack.name && pack.cards.count > 0 && [NSDictionary validatePList:[pack dictRepresentation]]);
+    return (pack.packIDString && pack.name && pack.cards.count > 0 && [NSDictionary validatePList:[pack dictRepresentation]]);
 }
 
 +(BOOL)savePackLocally:(Pack*)pack {
@@ -99,6 +99,7 @@
     }
     else {
         oldPack = [self packAtPath:pack.fileName]; // store the old verison in case of fail
+        NSLog(@"got an old pack");
     }
 
     BOOL writeSuccess = [[pack dictRepresentation] writeToFile:[self expandedPath:pack.fileName] atomically:YES];

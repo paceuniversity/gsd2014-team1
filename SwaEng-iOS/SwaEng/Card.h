@@ -10,8 +10,8 @@
 
 @interface Card : NSObject
 
-@property (strong, nonatomic) NSString *engWord;
-@property (strong, nonatomic) NSString *swaWord;
+@property (strong, nonatomic) NSString *phrase;
+@property (strong, nonatomic) NSString *translation;
 
 -(id)initWithProperties:(NSDictionary*)json;
 -(id)initWithDummyCode:(NSString*)ugu;
